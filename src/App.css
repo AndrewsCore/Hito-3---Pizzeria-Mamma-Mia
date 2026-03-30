@@ -1,0 +1,169 @@
+/* ESTILOS GLOBALES */
+.app-pizzeria {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+}
+
+/* NAVBAR */
+.navbar-contenedor {
+  background-color: #212529;
+  color: #ffffff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.navbar-logo {
+  font-weight: bold;
+  margin-right: 1.5rem;
+}
+.boton-nav {
+  background: transparent;
+  border: 1px solid #495057;
+  color: #ffffff;
+  padding: 0.4rem 0.8rem;
+  margin-right: 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+.boton-nav:hover {
+  background-color: #343a40;
+}
+.boton-total {
+  background: transparent;
+  border: 1px solid #0dcaf0;
+  color: #0dcaf0;
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* HEADER */
+.header-fondo {
+  background-image: url('https://img.freepik.com/free-photo/top-view-pepperoni-pizza-with-mushroom-pizzas-with-tomatoes-bell-pepper-olive-corn-black-wooden-table_141793-2158.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  color: #ffffff;
+  text-align: center;
+}
+.header-capa-oscura {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header-titulo {
+  margin: 0;
+  font-size: 2.5rem;
+}
+.header-descripcion {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+.header-separador {
+  width: 80%;
+  border: 0.5px solid rgba(255, 255, 255, 0.3);
+}
+
+/* HOME */
+.contenedor-grilla-pizzas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 3rem 10%;
+  flex-grow: 1;
+}
+
+/* CARD PIZZA */
+.tarjeta-pizza {
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.tarjeta-imagen {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.tarjeta-contenido {
+  padding: 1.5rem;
+  text-align: center;
+}
+.tarjeta-titulo {
+  margin-top: 0;
+  color:#000000;
+  font-size: 1.4rem;
+  text-align: left;
+}
+.texto-ingredientes-titulo {
+  color: #6c757d;
+  margin-bottom: 0.5rem;
+}
+.lista-ingredientes {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+  color: #495057;
+}
+.tarjeta-precio {
+  font-size: 1.3rem;
+  color: #212529;
+}
+.tarjeta-botones {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.boton-ver-mas {
+  background: white;
+  color:#000000;
+  border: 1px solid #adb5bd;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.boton-añadir {
+  background: #212529;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* FOOTER */
+.footer-contenedor {
+  background-color: #212529;
+  color: #ffffff;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .navbar-contenedor {
+	flex-direction: column;
+	gap: 10px;
+  }
+  .contenedor-grilla-pizzas {
+	padding: 1rem;
+  }
+}
