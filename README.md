@@ -1,4 +1,4 @@
-# Hito 2 pizzeria mamma mia desarrollada con html + css + react estados
+# Hito 3 pizzeria mamma mia desarrollada con html + css + react Renderización dinámica de componentes
 
 # React + Vite
 
