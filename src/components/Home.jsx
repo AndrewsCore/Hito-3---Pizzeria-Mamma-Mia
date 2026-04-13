@@ -1,31 +1,24 @@
 import React from 'react';
 import Header from './Header';
 import CardPizza from './CardPizza';
+import { pizzas } from './pizzas'; // Importamos el array de pizzas local
 
-// --- COMPONENTE PRINCIPAL: HOME ---
 const Home = () => {
   return (
-    <main id="contenido-inicio">
+    <main>
       <Header />
       <div className="contenedor-grilla-pizzas">
-        <CardPizza
-          name="Napolitana"
-          price={5950}
-          ingredients={["mozzarella", "tomates", "jamón", "orégano"]}
-          img="src/assets/pizza-1.jpg"
-        />
-        <CardPizza
-          name="Española"
-          price={6950}
-          ingredients={["mozzarella", "gorgonzola", "parmesano", "provolone"]}
-          img="src/assets/pizza-2.jpg"
-        />
-        <CardPizza
-          name="Pepperoni"
-          price={6950}
-          ingredients={["mozzarella", "pepperoni", "orégano"]}
-          img="src/assets/pizza-3.jpg"
-        />
+        {/* Mapeamos el array de pizzas para renderizar cada CardPizza */}
+        {pizzas.map((pizza) => (
+          <CardPizza
+            key={pizza.id}
+            name={pizza.name}
+            price={pizza.price}
+            ingredients={pizza.ingredients}
+            img={pizza.img}
+            desc={pizza.desc}
+          />
+        ))}
       </div>
     </main>
   );

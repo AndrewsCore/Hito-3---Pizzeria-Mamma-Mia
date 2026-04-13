@@ -244,3 +244,109 @@
 .boton-submit:hover {
   background-color: #0b5ed7;
 }
+
+/* carrito */
+
+.carrito-contenedor {
+  padding: 40px 10%;
+  background-color: #fff;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.carrito-contenedor h2 {
+color:#000000;
+}
+
+.carrito-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding: 15px 0;
+}
+
+.carrito-info-basica {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.carrito-img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.carrito-nombre {
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 1.1rem;
+}
+
+.carrito-controles {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.carrito-precio-unitario {
+  font-weight: bold;
+  color: #28a745;
+  margin-right: 15px;
+  min-width: 80px;
+  text-align: right;
+}
+
+.btn-cantidad {
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  border: 1px solid;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.btn-restar {
+  border-color: #dc3545;
+  color: #dc3545;
+  background: white;
+}
+
+.btn-sumar {
+  border-color: #0d6efd;
+  color: #0d6efd;
+  background: white;
+}
+
+.btn-restar:hover { background: #dc3545; color: white; }
+.btn-sumar:hover { background: #0d6efd; color: white; }
+
+.cantidad-texto {
+  font-weight: bold;
+  min-width: 20px;
+  text-align: center;
+}
+
+.carrito-total-seccion {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.carrito-total-seccion h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.btn-pagar {
+  background-color: #212529;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
